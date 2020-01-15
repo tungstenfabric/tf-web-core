@@ -42,11 +42,11 @@ b) Any version of **Redis Server**.
 
 SSH clone URL:
     
-    git clone git@github.com:Juniper/contrail-web-core.git
+    git clone git@github.com:tungstenfabric/tf-web-core.git
 
 HTTPS clone URL:
     
-    git clone https://github.com/Juniper/contrail-web-core.git
+    git clone https://github.com/tungstenfabric/tf-web-core.git
 
 3) Get [Contrail Web Controller](https://github.com/Juniper/contrail-web-controller/) code.
 
