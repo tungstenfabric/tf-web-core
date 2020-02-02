@@ -25,7 +25,7 @@ $(WEBUICLIENT):
 	if [ ! -d ../$(WEBUICLIENT) ]; then git clone git@github.com:tungstenfabric/tf-web-controller.git ../$(WEBUICLIENT); else cd ../$(WEBUICLIENT) && touch testFile && git stash; git pull --rebase; git stash pop; rm testFile; fi
 
 $(WEBUITHIRDPARTY):
-	if [ ! -d ../$(WEBUITHIRDPARTY) ]; then git clone git@github.com:Juniper/contrail-webui-third-party.git ../$(WEBUITHIRDPARTY); else cd ../$(WEBUITHIRDPARTY) && touch testFile && git stash; git pull --rebase; git stash pop; rm testFile; fi
+	if [ ! -d ../$(WEBUITHIRDPARTY) ]; then git clone git@github.com:tungstenfabric/tf-webui-third-party.git ../$(WEBUITHIRDPARTY); else cd ../$(WEBUITHIRDPARTY) && touch testFile && git stash; git pull --rebase; git stash pop; rm testFile; fi
 
 $(GENERATEDS):
 	if [ ! -d ../$(GENERATEDS) ]; then git clone https://github.com/Juniper/contrail-generateDS.git ../$(GENERATEDS); else cd ../$(GENERATEDS) && touch testFile && git stash; git pull --rebase; git stash pop; rm testFile; fi
