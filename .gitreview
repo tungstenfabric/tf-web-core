@@ -1,5 +1,5 @@
 [gerrit]
 host=review.opencontrail.org
 port=29418
-project=tungstenfabric/tf-web-core.git
-defaultbranch=master
+project=tungstenfabric/tf-web-core
+defaultbranch=dgautam-test2
