@@ -23,7 +23,6 @@ var configUtils = require('../../../common/config.utils'),
     _ = require('underscore'),
     rest = require('../../../common/rest.api');
 
-var mandatoryEndpointList = ['compute', 'image'];
 var config = configUtils.getConfig();
 var adminRoles = config.roleMaps['cloudAdmin'];
 var memberRoles = config.roleMaps['member'];
@@ -1258,7 +1257,7 @@ function getServiceCatalogByRegion (req, region, accessData, doFormat)
      * endpoints which contrail-webui needs, add those regions in
      * req.session.regionList
      */
-    var tmpEndpointList = commonUtils.cloneObj(mandatoryEndpointList);
+    var tmpEndpointList = [];
     if (false == authApi.isContrailEndptFromConfig()) {
         tmpEndpointList.push(authApi.getEndpointServiceType(global.DEFAULT_CONTRAIL_API_IDENTIFIER));
         tmpEndpointList.push(authApi.getEndpointServiceType(global.DEFAULT_CONTRAIL_ANALYTICS_IDENTIFIER));
