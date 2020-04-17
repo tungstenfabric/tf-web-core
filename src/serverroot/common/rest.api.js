@@ -158,7 +158,13 @@ APIServer.prototype.makeHttpsRestCall = function (options, callback)
             result += chunk;
         });
         res.on('end', function () {
-            callback(null, result, res);
+            var statusCode = res.statusCode;
+
+            if (statusCode === 200) {
+                callback(null, result, res);
+            } else if (statusCode >= 400) {
+                callback(result, null, res);
+            }
         });
         res.on('error', function (err) {
             callback(err);
