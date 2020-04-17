@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "99f49dff_a5d378cf",
+        "filename": "src/serverroot/common/rest.api.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 49
+      },
+      "writtenOn": "2020-04-17T19:29:49Z",
+      "side": 1,
+      "message": "Change this piece of code as below:\nif the statusCode contains with 40X, then change, and all other cases treat err as null.",
+      "revId": "4cd88a63e5fddcf0fa8a315ee91e176a9e108968",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "201cc329_1a1fd3f8",
+        "filename": "src/serverroot/common/rest.api.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 49
+      },
+      "writtenOn": "2020-04-17T19:29:49Z",
+      "side": 1,
+      "message": "Do, you see in 400 response code case, we are not getting in \u0027error\u0027 event? and does the result contain the error in this case?",
+      "revId": "4cd88a63e5fddcf0fa8a315ee91e176a9e108968",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
