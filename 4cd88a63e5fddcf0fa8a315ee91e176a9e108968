@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8f8eb547_ab545638",
+        "filename": "src/serverroot/common/rest.api.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 302
+      },
+      "writtenOn": "2020-04-17T19:44:26Z",
+      "side": 1,
+      "message": "okay.",
+      "parentUuid": "99f49dff_a5d378cf",
+      "revId": "4cd88a63e5fddcf0fa8a315ee91e176a9e108968",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "201cc329_1a1fd3f8",
         "filename": "src/serverroot/common/rest.api.js",
         "patchSetId": 1
@@ -33,6 +51,24 @@
       "revId": "4cd88a63e5fddcf0fa8a315ee91e176a9e108968",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3888b818_df69bd33",
+        "filename": "src/serverroot/common/rest.api.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 302
+      },
+      "writtenOn": "2020-04-17T19:44:26Z",
+      "side": 1,
+      "message": "I saw the error handler. But it isn\u0027t triggered for 400. By checking node\u0027s source code, the error event is related to those originated from underlying socket.",
+      "parentUuid": "201cc329_1a1fd3f8",
+      "revId": "4cd88a63e5fddcf0fa8a315ee91e176a9e108968",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": false
     }
   ]
 }
