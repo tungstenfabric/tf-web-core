@@ -158,17 +158,23 @@ APIServer.prototype.makeHttpsRestCall = function (options, callback)
             result += chunk;
         });
         res.on('end', function () {
-            callback(null, result, res);
+            var statusCode = res.statusCode;
+
+            if (statusCode >= 400 && statusCode < 500) {
+                errorback(result, null, res);
+            } else {
+                callback(null, result, res);
+            }
         });
         res.on('error', function (err) {
-            callback(err);
+            errorback(err);
         })
     });
 
     // req error
     req.on('error', function (err) {
         logutils.logger.error(err.stack);
-        callback(err);
+        errorback(err);
     });
 
     //send request with the postData form
