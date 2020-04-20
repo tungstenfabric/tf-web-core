@@ -161,7 +161,7 @@ APIServer.prototype.makeHttpsRestCall = function (options, callback)
             var statusCode = res.statusCode;
 
             if (statusCode >= 400 && statusCode < 500) {
-                errorback(result, null, res);
+                errorback(result, res, callback);
             } else {
                 callback(null, result, res);
             }
@@ -227,7 +227,7 @@ APIServer.prototype.retryMakeCall = function(err, restApi, params,
 }
 
 function errorback(err, response, callback) {
-    var error = new appErrors.RESTServerError(util.format(err));
+    var error = err instanceof appErrors.RESTServerError ? err : new appErrors.RESTServerError(util.format(err));
     error['custom'] = true;
     error['responseCode'] = ((null != response) && (null != response.statusCode)) ?
         response.statusCode : global.HTTP_STATUS_INTERNAL_ERROR;
