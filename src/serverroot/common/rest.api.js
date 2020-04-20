@@ -161,7 +161,7 @@ APIServer.prototype.makeHttpsRestCall = function (options, callback)
             var statusCode = res.statusCode;
 
             if (statusCode >= 400 && statusCode < 500) {
-                errorback(result, null, res);
+                errorback(result, res, callback);
             } else {
                 callback(null, result, res);
             }
