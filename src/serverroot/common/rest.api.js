@@ -174,7 +174,7 @@ APIServer.prototype.makeHttpsRestCall = function (options, callback)
     // req error
     req.on('error', function (err) {
         logutils.logger.error(err.stack);
-        errorback(err, res, callback);
+        errorback(err, null, callback);
     });
 
     //send request with the postData form
@@ -197,12 +197,15 @@ APIServer.prototype.retryMakeCall = function(err, restApi, params,
                                              response, callback, isRetry)
 {
     var self = this;
-    /* Check if the error code is ECONNREFUSED or ETIMEDOUT or ENETUNREACH,
+    /* Check if the error code is ECONNREFUSED or ETIMEDOUT or ENETUNREACH or EHOSTUNREACH,
      * if yes then remove the server entry from the operational list and serve
      * the current request with next available server from the list
      */
     if (
-        (('ECONNREFUSED' == err.code) || ('ETIMEDOUT' == err.code) || ('ENETUNREACH' == err.code))
+        (('ECONNREFUSED' == err.code) ||
+        ('ETIMEDOUT' == err.code) ||
+        ('ENETUNREACH' == err.code) ||
+        ('EHOSTUNREACH' == err.code))
         && !isRetry
     ) {
         // Remove unavailable node visited by current request
