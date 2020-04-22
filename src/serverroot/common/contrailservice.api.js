@@ -340,7 +340,8 @@ function updateContrailServiceData(statusData)
         if ((null != statusData[i].err) &&
             (('ECONNREFUSED' == statusData[i].err.code) ||
             ('ETIMEDOUT' == statusData[i].err.code) ||
-            ('ENETUNREACH' == statusData[i].err.code))) {
+            ('ENETUNREACH' == statusData[i].err.code) ||
+            ('EHOSTUNREACH' == statusData[i].err.code))) {
             data[i].status = "down";
         } else {
             data[i].status = "up";

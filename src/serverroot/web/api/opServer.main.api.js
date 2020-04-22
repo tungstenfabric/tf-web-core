@@ -85,7 +85,12 @@ function doSendApiServerRespToApp (error, data, obj, appData, callback)
     if ((null != error) && (null == isRetry) &&
         (true == authApi.isCGCEnabled(req))) {
         var errCode = error.code;
-        if (('ECONNREFUSED' == errCode) || ('ETIMEDOUT' == errCode)) {
+        if (
+            ('ECONNREFUSED' == errCode) ||
+            ('ETIMEDOUT' == errCode) ||
+            ('ENETUNREACH' == errCode) ||
+            ('EHOSTUNREACH' == errCode)
+        ) {
             serveAPIRequest(reqUrl, reqData, appData, appHeaders, reqType,
                             callback, false);
             return;
