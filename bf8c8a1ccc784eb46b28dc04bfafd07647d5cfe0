@@ -16,6 +16,24 @@
       "revId": "bf8c8a1ccc784eb46b28dc04bfafd07647d5cfe0",
       "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e0770546_7487ae2f",
+        "filename": "src/serverroot/common/rest.api.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 302
+      },
+      "writtenOn": "2020-04-23T18:02:27Z",
+      "side": 1,
+      "message": "The response isn\u0027t available. When this error event occurs, the socket isn\u0027t connected. No response object.",
+      "parentUuid": "0fafe6ca_fef01cca",
+      "revId": "bf8c8a1ccc784eb46b28dc04bfafd07647d5cfe0",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
     }
   ]
 }
