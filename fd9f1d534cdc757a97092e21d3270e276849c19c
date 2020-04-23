@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4114d383_75f6e13d",
+        "filename": "src/serverroot/common/rest.api.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 227,
+      "author": {
+        "id": 302
+      },
+      "writtenOn": "2020-04-23T17:38:20Z",
+      "side": 1,
+      "message": "Adjust this line to\n\nvar error \u003d err instanceof appErrors.RESTServerError ? err : new appErrors.RESTServerError(util.format(err));",
+      "revId": "fd9f1d534cdc757a97092e21d3270e276849c19c",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
