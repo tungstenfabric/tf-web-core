@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0fafe6ca_fef01cca",
+        "filename": "src/serverroot/common/rest.api.js",
+        "patchSetId": 3
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 49
+      },
+      "writtenOn": "2020-04-23T18:00:36Z",
+      "side": 1,
+      "message": "Let us not change this one. As after getting the error responses, some places we used to do something from res object.",
+      "revId": "bf8c8a1ccc784eb46b28dc04bfafd07647d5cfe0",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
