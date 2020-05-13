@@ -68,6 +68,11 @@ function getImageList (req, callback)
     callback(null, null);
 }
 
+function updateRouter (req, appData, svcType, callback)
+{
+    callback(null);
+}
+
 exports.get = get;
 exports.post = post;
 exports.launchVNC = launchVNC;
@@ -78,6 +83,7 @@ exports.getOSHostList = getOSHostList;
 exports.getAvailabilityZoneList = getAvailabilityZoneList;
 exports.portAttach = portAttach;
 exports.portDetach = portDetach;
+exports.updateRouter = updateRouter;
 
 /* Image Manager Public APIs */
 exports.getImageList = getImageList;
