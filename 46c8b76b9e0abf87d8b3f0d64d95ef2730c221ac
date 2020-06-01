@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fdd9554d_750f249e",
+        "filename": "src/serverroot/utils/common.utils.js",
+        "patchSetId": 1
+      },
+      "lineNbr": 1442,
+      "author": {
+        "id": 55
+      },
+      "writtenOn": "2020-06-01T21:25:20Z",
+      "side": 1,
+      "message": "arent sessionProject and userProject same? and is sessionProject used later?",
+      "revId": "46c8b76b9e0abf87d8b3f0d64d95ef2730c221ac",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
