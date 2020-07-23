@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1b0cf4e9_40cd4cca",
+        "filename": "webroot/common/ui/templates/core.common.tmpl",
+        "patchSetId": 1
+      },
+      "lineNbr": 1672,
+      "author": {
+        "id": 302
+      },
+      "writtenOn": "2020-07-23T15:43:49Z",
+      "side": 1,
+      "message": "is `user_visiable` a common field to all resource? Can you make a fix specifically for the SI feature?\n\nThis template is used by all tables.",
+      "revId": "a4b8cf330a91b1f360db85dbae33d7fc1770e7bd",
+      "serverId": "c72cd27d-1743-4a55-84a4-cd13b8400c52",
+      "unresolved": true
+    }
+  ]
+}
