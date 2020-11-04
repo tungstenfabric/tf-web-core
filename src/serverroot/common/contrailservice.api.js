@@ -343,7 +343,7 @@ function updateContrailServiceData(statusData)
             ('ENETUNREACH' == statusData[i].err.code) ||
             ('EHOSTUNREACH' == statusData[i].err.code))) {
             data[i].status = "down";
-        } else {
+        } else if (data[i]) {
             data[i].status = "up";
         }
     }
