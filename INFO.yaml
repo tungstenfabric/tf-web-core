@@ -1,0 +1,59 @@
+---
+project: 'tf-web-core'
+project_creation_date: '2020-01-14'
+project_category: ''
+lifecycle_state: 'Incubation'
+project_lead: &tungstenfabric_tf-web-core_ptl
+    name: 'Sukhdev Kapur'
+    email: 'sukhdevkapur@gmail.com'
+    id: 'sukhdevkapur'
+    company: ''
+    timezone: 'America/Los_Angeles'
+primary_contact: *tungstenfabric_tf-web-core_ptl
+issue_tracking:
+    type: 'jira'
+    url: 'https://jira.tungsten.io/projects/'
+    key: 'TC'
+mailing_list:
+    type: 'groups.io'
+    url: ''
+    tag: '[]'
+realtime_discussion:
+    type: ''
+    server: ''
+    channel: ''
+meetings:
+    - type: ''
+      agenda: ''
+      url: ''
+      server: ''
+      channel: ''
+      repeats: ''
+      time: ''
+repositories:
+    - tungstenfabric/tf-web-core
+committers:
+    - <<: *tungstenfabric_tf-web-core_ptl
+    - name: 'Manoj Naik'
+      email: 'mnaik@juniper.net'
+      company: 'Juniper'
+      id: ''
+      timezone: 'PST'
+    - name: 'Biswajit Mandal'
+      email: 'bmandal@juniper.net'
+      company: 'Juniper'
+      id: ''
+      timezone: 'PST'
+    - name: 'Zheyang Song'
+      email: 'zsong@juniper.net'
+      company: 'Juniper'
+      id: 'zsong'
+      timezone: 'PST'
+tsc:
+    # yamllint disable rule:line-length
+    approval: 'https://wiki.tungsten.io/display/TUN/Projects'
+    changes:
+        - type: 'initial approval'
+          name: ''
+          link: ''
+
