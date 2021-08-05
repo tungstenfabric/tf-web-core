@@ -7,7 +7,7 @@ project_lead: &tungstenfabric_tf-web-core_ptl
     name: 'Sukhdev Kapur'
     email: 'sukhdevkapur@gmail.com'
     id: 'sukhdevkapur'
-    company: ''
+    company: 'Juniper'
     timezone: 'America/Los_Angeles'
 primary_contact: *tungstenfabric_tf-web-core_ptl
 issue_tracking:
@@ -37,18 +37,18 @@ committers:
     - name: 'Manoj Naik'
       email: 'mnaik@juniper.net'
       company: 'Juniper'
-      id: ''
-      timezone: 'PST'
+      id: 'manojgn'
+      timezone: 'America/Los_Angeles'
     - name: 'Biswajit Mandal'
       email: 'bmandal@juniper.net'
       company: 'Juniper'
-      id: ''
-      timezone: 'PST'
+      id: 'bmandal'
+      timezone: 'America/Los_Angeles'
     - name: 'Zheyang Song'
       email: 'zsong@juniper.net'
       company: 'Juniper'
       id: 'zsong'
-      timezone: 'PST'
+      timezone: 'America/Los_Angeles'
 tsc:
     # yamllint disable rule:line-length
     approval: 'https://wiki.tungsten.io/display/TUN/Projects'
@@ -56,4 +56,3 @@ tsc:
         - type: 'initial approval'
           name: ''
           link: ''
-
