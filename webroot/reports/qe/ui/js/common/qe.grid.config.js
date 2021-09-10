@@ -915,7 +915,7 @@ define([
         "StatTable.CollectorDbStats.cql_stats.stats": [],
         "StatTable.CollectorDbStats.cql_stats": [],
         "StatTable.NodeStatus.process_mem_cpu_usage": [],
-        "StatTable.PeerStatsData.rx_update_stats": [],
+        "StatTable.PeerStatsData.raw_rx_update_stats": [],
         "StatTable.VrouterStatsAgent.phy_flow_rate": [],
         "StatTable.NodeStatus.system_mem_usage": [],
         "StatTable.NodeStatus.system_cpu_usage": [],
@@ -927,7 +927,7 @@ define([
         "StatTable.ModuleClientState.msg_type_diff": [],
         "StatTable.CassandraStatusData.cassandra_compaction_task": [],
         "StatTable.CollectorDbStats.stats_info": [],
-        "StatTable.PeerStatsData.tx_update_stats": [],
+        "StatTable.PeerStatsData.raw_tx_update_stats": [],
         "StatTable.ModuleClientState.tx_msg_diff": [],
         "defaultStatColumns": [
             {select:"T", display:{width:210, filterable:false}},
