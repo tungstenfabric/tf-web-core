@@ -2044,7 +2044,8 @@ define([
                               name: failureLabel,
                               total: total,
                           });
-                      } else if(response.length == 0 || (isRequestInProgress && defaultZeroLineDisplay && groupBy != null)){
+                      };
+		    if(parsedData['DEFAULT']){
                           parsedData['DEFAULT'].values.push({
                               date: new Date(i/1000),
                               x: ifNull(i, 0)/1000,
