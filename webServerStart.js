@@ -149,7 +149,7 @@ function initializeAppConfig (appObj, routesRegister)
         next();
     });
     app.use(bodyParser.json({ limit: "50mb" }));
-    app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
+    app.use(bodyParser.urlencoded({ limit: "50mb", extended: false }));
     routesRegister(app);
     // Catch-all error handler
     app.use(function (err, req, res, next) {
