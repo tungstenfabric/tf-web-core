@@ -1534,14 +1534,22 @@ define([
                             self.select2('val', value, triggerChange);
                         } else if (contrail.checkIfExist(option.defaultValueId) &&
                             option.defaultValueId >= 0 && option.data.length > option.defaultValueId) {
-
-                            // set default value
-                            var selectedOption = option.data[option.defaultValueId];
-                            if (contrail.checkIfExist(option.data[0].children) && option.data[0].children.length > 1) {
-                                selectedOption = option.data[0].children[option.defaultValueId];
-                            }
-
-                            self.select2('val', selectedOption[option.dataValueField.dsVar], triggerChange);
+                                if (value !== undefined && value !== "") {
+                                    option.data.push({
+                                      value: value,
+                                      text: value.split(":")[2].split(" ")[0],
+                                      id: value,
+                                    });
+                                    self.select2("val", value, triggerChange);
+                                  } else {
+                                      // set default value
+                                       var selectedOption = option.data[option.defaultValueId];
+                                       if (contrail.checkIfExist(option.data[0].children) && option.data[0].children.length > 1) {
+                                           selectedOption = option.data[0].children[option.defaultValueId];
+                                        }
+                                       self.select2('val', selectedOption[option.dataValueField.dsVar], triggerChange);
+                                      
+                                    }                                            
                         }
                     }
                 }
